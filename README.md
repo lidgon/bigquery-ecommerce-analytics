@@ -1,39 +1,14 @@
 # BigQuery E-commerce Analytics
 
-This project presents an end-to-end SQL analysis of public e-commerce data using Google BigQuery.
+SQL analysis of the public dataset `bigquery-public-data.thelook_ecommerce` in Google BigQuery.
 
-## Dataset
-Public dataset:
-`bigquery-public-data.thelook_ecommerce`
+## What’s inside
+- Monthly order volume (`sql/01_monthly_orders.sql`)
+- Monthly revenue (`sql/02_monthly_revenue.sql`)
+- Month-over-month revenue growth: absolute and % (`sql/03_revenue_growth.sql`)
 
-## Scope of Analysis
+## Key takeaway
+Revenue increases over time, while MoM growth % is more volatile and does not scale proportionally with absolute revenue.
 
-The project includes:
-
-- Monthly order volume analysis
-- Monthly revenue calculation
-- Revenue month-over-month difference
-- Revenue growth percentage (MoM)
-
-## Key Metrics
-
-- `total_orders`
-- `total_revenue`
-- `revenue_diff`
-- `revenue_growth_pct`
-
-## Business Insights
-
-- Revenue shows a consistent upward trend.
-- Growth percentage fluctuates more than absolute revenue.
-- No major structural anomalies detected in the observed period.
-
-## Technologies Used
-
-- Google BigQuery
-- SQL (CTE, Window Functions: LAG, SAFE_DIVIDE)
-- GitHub (project documentation)
-
----
-
-Project created as part of analytics skill development.
+## Tech
+BigQuery SQL (JOIN, CTE, window functions: LAG, SAFE_DIVIDE)
