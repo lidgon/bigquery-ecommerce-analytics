@@ -10,5 +10,9 @@ SQL analysis of the public dataset `bigquery-public-data.thelook_ecommerce` in G
 ## Key takeaway
 Revenue increases over time, while MoM growth % is more volatile and does not scale proportionally with absolute revenue.
 
+## Screenshots
+![Revenue trend](screenshots/revenue_trend.png)
+![Revenue growth](screenshots/revenue_growth.png)
+
 ## Tech
 BigQuery SQL (JOIN, CTE, window functions: LAG, SAFE_DIVIDE)
