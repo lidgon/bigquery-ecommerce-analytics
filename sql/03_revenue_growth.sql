@@ -1,3 +1,7 @@
+-- Objective: Calculate monthly revenue growth (MoM)
+-- Technique: CTE + Window Functions (LAG)
+-- Output: revenue_diff and revenue_growth_pct
+
 WITH monthly_data AS (
   SELECT
     FORMAT_DATE('%Y-%m', DATE(o.created_at)) AS order_month,
